@@ -1,0 +1,174 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: 'AcademicaLightPro';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 0;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  box-shadow: 0;
+  line-height: 1;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #f7f7f7;
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.pages {
+  width: 200vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 30%;
+  height: 100vh;
+  background: white;
+  transition: margin-left 600ms ease-in;
+}
+
+.overlay {
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f7f7f7;
+  z-index: 100;
+}
+
+.page {
+  width: 60%;
+  max-width: 620px;
+  height: 100%;
+  position: relative;
+  margin-right: 8rem;
+  padding: 4rem;
+  padding-bottom: 0;
+  float: left;
+}
+
+.pages.next {
+  margin-left: calc(-20% - 10px);
+  opacity: 1;
+}
+
+.pages.next  .page p,
+.pages.next .page span, {
+  opacity: 1;
+}
+
+.page:nth-child(even) {
+  background: #fcfcfc;
+}
+
+.page:nth-child(2) p,
+.page:nth-child(2) span  {
+  opacity: 0.25;
+  transition: opacity 300ms ease-in-out;
+}
+
+
+
+.page:nth-child(2):hover p,
+.page:nth-child(2):hover span  {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.page:nth-child(2) p:first-of-type,
+.page:nth-child(3) p:first-of-type {
+  text-indent: 0;
+}
+
+h1, h2, p, .pn {
+  font-size: 2.225rem;
+}
+
+h1 {
+  margin-left: 20%;
+  margin-bottom: 2.55em;
+}
+
+h2 {
+  margin-left: 20%;
+  margin-bottom: 2.3rem;
+}
+
+p {
+  text-indent: 20%;
+  text-align: left;
+}
+
+a {
+  font-family: sans-serif;
+}
+
+span.pn{
+  text-indent: 20%;
+  position: absolute;
+  bottom: 2.4rem;
+}
+
+span.running-head {
+  font-size: 2.225rem;
+  display: block;
+  margin-left: 20%;
+  font-style: italic;
+}
+
+.footnote {
+  width: 28rem;
+  height: auto;
+  position: absolute;
+  bottom: 12%;
+  left: 5rem;
+  display: none;
+}
+
+.footnote p {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  text-indent: 0;
+}
+
+em, i {
+  font-style: italic;
+}
+
+@media(max-width: 768px) {
+  .pages {
+    margin-left: 3rem;
+  }
+  .overlay {
+    margin-left: -300px;
+  }
+}
