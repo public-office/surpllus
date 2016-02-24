@@ -1,53 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
 <head>
+  <title></title>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="main.js"></script>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="overlay">
-      <div class="footnote">
-        <p>1. The Native Title Act 1993 progresses common goals for maintaining cultural and biological diversity. Subsequent perceptions of uncertainty by exaggerated fears of pastoralists in response to the Act and High Court decisions may have impeded rather than progressed</p>
-      </div>
-    </div>
-    <section class="pages">
-      <article class="page">
-        <h1>Memory is not a recording device: on Eliza Hutchison&rsquo;s <em>Hair in the Gate</em>, a biograph</h1>
-        <h2>Helen Johnson</h2>
-        <p>A decision can be comprised of a series of moments over a stretch of time, without any of those moments in themselves constituting the decision as such. A month might pass, and at the end of it you find yourself feeling sure of something, a turn in the path hitherto unconceived. To look back through time after such a shift is to see another side to certainty, realising later that something was long ago lost, or that you underwent a betrayal without even realising it. I once heard Betty Churcher speaking about the lace in Velázquez&rsquo;s <i>Las Meninas</i>, 1656, questioning whether people from cultures other than that which produced the lace would themselves be able to perceive, from looking at Velázquez’s painting, the particular qualities of that lace, which for the Spanish reside so confidently in the economy of the brush marks.</p>
-        <p>This question, or at least its form, is a hallmark of Australia&rsquo;s cultural condition <a class="fn" href="#">(1)</a>. We are the ones who don&rsquo;t apprehend the lace, but what we see</p>
-        <span class="pn">12</span>
-      </article>
-
-      <article class="page" id="two">
-        <span class="running-head">Memory is not a recording device</span>
-        <p>instead has a different sort of meaning. We bring things in, embrace them, attach them to our idea of ourselves, not able to know how much or how little we truly perceive or understand, like an embrace of one&rsquo;s teenage child. There is room for meaning to be made there. The slippage, the misapprehension is a very important form of cultural production on this continent, a reshaping force.</p>
-        <p>How often does one&rsquo;s imagination step in to furnish the nuances of a moment that occurred in another place or time, such that it might be mulled over, interpreted, responded to? In part it requires the mind to manufacture a sense of conviction that all the details are there if you only choose to look, the way you can flick through a novel in a dream and believe that its content is available in full.</p>
-        <p>I heard a woman on the radio, talking about how memory is not a recording device, but a series of narrative strands, for which &lsquo;truth&rsquo; is not the priority. Where does experience lie then: in the occurrence or in its recollection, the residue that is retained? Things get levelled out. Did I experience that, or dream it? Or see it in a film? </p>
-        <p>Eliza Hutchison’s photographs engage</p>
-        <span class="pn">13</span>
-      </article>
-
-      <article class="page">
-        <span class="running-head">Memory is not a recording device</span>
-        <p>narratives, but their entry into those narratives is not linear. Their rule of narrative is not linearity but displacement. There is a fragment of a metaphor for Hutchison’s images in the fact that most digital cameras fake the sound of the analogue shutter release, even on smart phones where there can be no illusion of such a mechanism being physically contained within the apparatus. It doesn’t matter that there is no actual mechanism behind the sound, its function has migrated from the mechanistic to the psychological. I suppose we require the sense of closure it offers. It is a welcome illusion, an anachronism translated that it might be brought along. Hutchison’s images are not so friendly or welcome, but they inhabit a similar form of representation, an extraction and displacement, a new housing that gestures towards a prior one. The sound of the shutter release is a form detached from content, but Hutchison’s images, if they perform a similar formal procedure, do so for the sake of their content. Frozen out of the morass and taken beyond what they seek to represent, they repeat for us a process of at once separating out and blurring as a means of coming tangentially at the unspeakable.</p>
-        <p>Hutchison picks up tangles through time in</p>
-        <span class="pn">14</span>
-      </article>
-    </section>
-  </div>
-  <script>
-    $('.fn').on('click', function() {
-      $('.footnote').fadeToggle();
-    })
-
-    $('.page#two, .page#3').on('click', function(event) {
-      event.preventDefault();
-      $('.pages').toggleClass('next');
-      // $('p, span').fadeTo(1);
-    })
-  </script>
+  <main id="root"></main>
+  <script src="bundle.js"></script>
 </body>
-
+</html>
